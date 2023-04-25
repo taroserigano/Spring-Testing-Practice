@@ -21,7 +21,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
+import java.util.Optional; 
 
 @ExtendWith(MockitoExtension.class)
 public class EmployeeServiceTests {
@@ -86,6 +86,8 @@ public class EmployeeServiceTests {
         });
 
         // then
+        
+        // stopping the process by never() 
         verify(employeeRepository, never()).save(any(Employee.class));
     }
 
