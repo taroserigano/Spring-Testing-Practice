@@ -51,6 +51,8 @@ public class EmployeeServiceTests {
     @Test
     public void givenEmployeeObject_whenSaveEmployee_thenReturnEmployeeObject(){
         // given - precondition or setup
+        
+        // if exists, findByEmail method will return exception Otherwise, found employee as <Optional> 
         given(employeeRepository.findByEmail(employee.getEmail()))
                 .willReturn(Optional.empty());
 
