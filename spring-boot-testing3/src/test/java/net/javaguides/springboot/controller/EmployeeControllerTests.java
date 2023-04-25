@@ -121,6 +121,8 @@ public class EmployeeControllerTests {
                 .lastName("Fadatare")
                 .email("ramesh@gmail.com")
                 .build();
+        
+        // return result is Optional and EMPTY -> therefore notFound is expected 
         given(employeeService.getEmployeeById(employeeId)).willReturn(Optional.empty());
 
         // when -  action or the behaviour that we are going test
