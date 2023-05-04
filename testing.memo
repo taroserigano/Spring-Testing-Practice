@@ -1,0 +1,16 @@
+
+What is stubbing? 
+
+-The process of writing how a given mock method should behave is called "stubbing". you mock some dependency 
+(by injecting the external component) and then set up some fixed values as you wish, and then assertTrue to see if
+the value matches or not 
+-give stubbing some pre-set-up values by using: 
+--1. when() + thenReturn() 
+--2. doReturn() + when() 
+
+
+
+
+
+
+
